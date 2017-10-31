@@ -1,35 +1,40 @@
-//Q1. Write a function named outputSimpleMsg. The function shouldn't accept any arguments. It should simply display 'hello world' in the console.
+function outputSimpleMsg()
+{
+	console.log("hello world");
+}
 
-//Q2. Write a function named outputMsg. The function should accept a single argument, a string. The function should display 'You entered xxxx' where xxxx is the value of the argument. e.g if called with an argument of 'hello', it should display 'You entered hello' in the console. 
+//Q1. Write a line of code that will call the function outputSimpleMsg.
+
+//Q2. Change outputMsg so that it accepts a single argument, a string. The function should display 'You entered xxxx' where xxxx is the value of the argument. e.g if called with an argument of 'hello', it should display 'You entered hello' in the console. 
 
 //Q3. Write a function named addTwoNumbers. The function should accept two arguments, both numbers.The total of these numbers should be displayed in the console. e.g. if called with arguments of 10 and 1, it should display 11 in the console. 
 
 //Q4. Write a function named outputPositiveNumbers. The function should accept a single argument, an array of numbers. Only the positive numbers in the array should be displayed in the console, one console message for each positive number in the array.
 
-//Q5. Write a function named printPassed. The function should accept a single argument, a student object with properties: name, course and mark. The function should output whether or not the student has passed the module e.g. if passed an argument of {name:"Fred",course:"ICT",mark:31} the function should output 'Fred has failed'. If passed an argument of {name:"Jane",course:"BACB",mark:60} the function should output 'Jane has passed'.
+//Q5. Look at the following code. This code creates a student object and then calls a function named printPassed. Uncomment the code and write the printPassed function. The function should output whether or not the student has passed the module i.e. if they have a mark greater than 40.
 
-//Q6. Write a function named simpleLogin. The function should accept two arguments, a username and a password. If the username equals 'user' and the password equals 'letmein' the function should return a value of true. If the correct values aren't used the function should return false. 
+// var student={
+// 	name:"Jane",
+// 	course:"BACB",
+// 	mark:60
+// }
 
-//Q7. Write a function addTen. The function should accept a single argument, a number. The function should return the number plus 10 e.g. if called with an argument of 5, the function should return 15. 
+// printPassed(student)
 
-//Q8. Write a function addNumbers. The function should accept a single argument, an array of numbers. The function should return the total of all the numbers in the array e.g. if called with an argument of [3,2,1] the function should return 6.
+//Q6. Write a function named simpleLogin. The function should accept two arguments, a username and a password. If the username equals 'user' and the password equals 'letmein' the function should return a value of true. If the correct values aren't used the function should return false. Uncomment the following lines to test your function. 
 
-//Q9. Write a function getPositiveNumbers. The function should accept a single argument, an array of numbers. The function should return only those numbers that are positive numbers. The function will need to return an array.
+//console.log(simpleLogin("user","letmein")); //should output true
+//console.log(simpleLogin("user","password")); //should output false
 
-//Q10.Modify your addTen function. It should return undefined if the function isn't passed a number.
+//Q7. Write a function addTen. The function should accept a single argument, a number. The function should return the number plus 10 e.g. if called with an argument of 5, the function should return 15. Uncomment the following line to test your function. 
 
-//Q11. Write a function validUserName. The function should accept a single argument, a username. If the username has 6 characters or more, the function should return true. If it contains fewer than 6 characters it should return false. Make sure you add appropriate checking of data types.  
+//console.log(addTen(13)); //should output 23
 
-/*
-Q12. You should be familiar with the following code. 
+//Q8. Write a function addNumbers. The function should accept a single argument, an array of numbers. The function should return the total of all the numbers in the array e.g. if called with an argument of [3,2,1] the function should return 6. Uncomment the following line to test your function. 
 
-var newElement = document.createElement('div');
-newElement.innerHTML='new content';
+//console.log(addNumbers([3,2,1])); //should output 6
 
-It simply creates an HTML element and adds some text content. Write a function createEl that will simplify this. The function should accept two arguments, a tag name and text content. The function should return an HTML element with the specified tag name and content.   
+//Q9. Write a function getPositiveNumbers. The function should accept a single argument, an array of numbers. The function should return only those numbers that are positive numbers. The function will need to return an array. Uncomment the following line to test your function. 
 
-*/
+//console.log(getPositiveNumbers([-3,12,-11,423,1])); //should output [12,423,1]
 
-/*
-Q13. Write a function buildList. The function should accept a single argument, an array. The function should return an HTML list (<ul>) element with an <li> for each item in the array. If the function is passed an argument that isn't an array it should throw an error.
-*/
